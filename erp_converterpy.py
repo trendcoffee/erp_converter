@@ -141,7 +141,7 @@ st.title("이카운트 판매입력 변환기")
 st.write("이플렉스 주문상세현황 엑셀 파일을 업로드하면 이카운트 '판매입력 웹자료 올리기' 형식으로 변환해 드립니다.")
 
 # 파일 업로더 위젯
-uploaded_file = st.file_uploader("쿠팡 주문 엑셀 파일을 선택하세요 (.xlsx)", type=["xlsx"])
+uploaded_file = st.file_uploader("주문상세현황 엑셀 파일을 올려주세요 (.xlsx)", type=["xlsx"])
 
 if uploaded_file is not None:
     st.info(f"파일 '{uploaded_file.name}'을(를) 업로드했습니다. 변환을 시작합니다...")
@@ -169,4 +169,4 @@ if uploaded_file is not None:
         st.warning("파일 변환에 실패했습니다. 위의 오류 메시지를 확인해주세요.")
 
 st.markdown("---")
-st.caption("개발자: [당신의 이름 또는 회사 이름]") # 선택적으로 개발자 정보 추가
+st.caption("개발자: [더끌림컴퍼니]") # 선택적으로 개발자 정보 추가
