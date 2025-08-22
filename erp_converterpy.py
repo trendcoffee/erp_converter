@@ -50,7 +50,7 @@ def convert_file(uploaded_file):
                 return "롯데쇼핑주식회사", "롯데온"
             elif 판매채널_val == "NFA": # 네이버페이 (스마트스토어)
                 return "네이버파이낸셜 주식회사", "스마트스토어"
-            elif 판매채널_val == "11번가":
+            elif 판매채널_val == "11ST":
                 return "십일번가 주식회사", "11번가"
             else: # 매핑되지 않은 경우 판매채널 값을 그대로 사용
                 return 판매채널_val, 판매채널_val
